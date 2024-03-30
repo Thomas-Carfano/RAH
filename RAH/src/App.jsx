@@ -1,14 +1,15 @@
-import { useState } from 'react';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import HomePage from './components/HomePage';
 
 const App = () => {
-  const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1>RAH</h1>
+      <Routes>
+        <Route path="/" element={<HomePage />}/>
+      </Routes>
     </>
-  )
-}
+  );
+};
 
 export default App;
